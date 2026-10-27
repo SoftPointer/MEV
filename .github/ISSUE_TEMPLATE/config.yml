@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Dataset access and annotation questions
+    url: https://huggingface.co/datasets/MultiEventVideo/MEV/discussions
+    about: Ask about data downloads, annotations, or provenance.
+  - name: Project page
+    url: https://mev-dataset.github.io/
+    about: View the project overview and video examples.

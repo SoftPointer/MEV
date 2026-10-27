@@ -1,0 +1,46 @@
+[
+  {
+    "id": "ab6af809-8084-4278-a434-b3bc696a698f_e1-e2_v5",
+    "uuid": "ab6af809-8084-4278-a434-b3bc696a698f",
+    "event_count": 2,
+    "event_range": "e1-e2",
+    "prompt_variant_id": 5,
+    "prompt_variant_name": "structured_global_middle_plus_events",
+    "global_caption_type": "middle",
+    "structured": true,
+    "prompt": "[global]\nIn a brightly lit, minimalist living room, a man and woman sit on opposite ends of a beige sofa, their silence reflecting unresolved tension. The man wears a green t-shirt and jeans, while the woman is in a light green sweater and matching jeans; both display signs of stress and annoyance. The static wide shot consistently captures their physical and emotional distance, emphasizing the strained atmosphere. The environment features white walls, light wooden flooring, a white side table with potted plants, and a tall floor lamp, creating a clean aesthetic that contrasts with the emotional disconnect between them.\n\n[event1]\nThe man and woman sit silently on opposite ends of the couch, facing away from each other after an apparent argument.\n\n[event2]\nThe man glances back at the woman and then quickly turns away again. He runs his hand over his head in frustration while the woman gestures dismissively from the other end of the couch.",
+    "global_caption": "In a brightly lit, minimalist living room, a man and woman sit on opposite ends of a beige sofa, their silence reflecting unresolved tension. The man wears a green t-shirt and jeans, while the woman is in a light green sweater and matching jeans; both display signs of stress and annoyance. The static wide shot consistently captures their physical and emotional distance, emphasizing the strained atmosphere. The environment features white walls, light wooden flooring, a white side table with potted plants, and a tall floor lamp, creating a clean aesthetic that contrasts with the emotional disconnect between them.",
+    "event_captions": [
+      "The man and woman sit silently on opposite ends of the couch, facing away from each other after an apparent argument.",
+      "The man glances back at the woman and then quickly turns away again. He runs his hand over his head in frustration while the woman gestures dismissively from the other end of the couch."
+    ],
+    "event_ids": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "ad18f033-3aa7-44eb-aaab-61cb19ccf790_e1-e4_v5",
+    "uuid": "ad18f033-3aa7-44eb-aaab-61cb19ccf790",
+    "event_count": 4,
+    "event_range": "e1-e4",
+    "prompt_variant_id": 5,
+    "prompt_variant_name": "structured_global_middle_plus_events",
+    "global_caption_type": "middle",
+    "structured": true,
+    "prompt": "[global]\nIn a dimly lit bedroom at night, a worried couple sits on their bed to discuss their finances. The atmosphere is tense as the woman, dressed in pajamas, points at a receipt and speaks with concern to the man, who wears a flannel shirt and looks downcast while using his phone, likely as a calculator. The scene, captured in a mostly static medium shot with only slight natural handheld jitter, uses soft, warm lighting to highlight the emotional weight of their serious conversation about money, creating a realistic and cinematic portrayal of domestic stress.\n\n[event1]\nThe man picks up a receipt and hands it to the woman as they sit on the bed and discuss it.\n\n[event2]\nThe woman holds the small receipt and speaks earnestly to the downcast man as they sit together on the bed, then finally places it on the bed.\n\n[event3]\nThe man touches the receipt and then picks up his phone to calculate under the woman’s guidance.\n\n[event4]\nThe man puts down his phone, the woman unfolds a paper receipt and points to it while discussing it with the man sitting on the bed.",
+    "global_caption": "In a dimly lit bedroom at night, a worried couple sits on their bed to discuss their finances. The atmosphere is tense as the woman, dressed in pajamas, points at a receipt and speaks with concern to the man, who wears a flannel shirt and looks downcast while using his phone, likely as a calculator. The scene, captured in a mostly static medium shot with only slight natural handheld jitter, uses soft, warm lighting to highlight the emotional weight of their serious conversation about money, creating a realistic and cinematic portrayal of domestic stress.",
+    "event_captions": [
+      "The man picks up a receipt and hands it to the woman as they sit on the bed and discuss it.",
+      "The woman holds the small receipt and speaks earnestly to the downcast man as they sit together on the bed, then finally places it on the bed.",
+      "The man touches the receipt and then picks up his phone to calculate under the woman’s guidance.",
+      "The man puts down his phone, the woman unfolds a paper receipt and points to it while discussing it with the man sitting on the bed."
+    ],
+    "event_ids": [
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+]

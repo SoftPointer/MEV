@@ -1,0 +1,42 @@
+# Local credentials and environments
+.env
+.env.*
+!.env.example
+.venv/
+.venv-*/
+venv/
+
+# Python and tooling
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+.cache/
+
+# Downloaded data, generated videos, and evaluation runs
+data/
+outputs/
+results/
+logs/
+checkpoints/
+*.mp4
+*.mov
+*.tar
+*.tar.gz
+*.zip
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Local editor and OS files
+.DS_Store
+.idea/
+.vscode/
+*.swp

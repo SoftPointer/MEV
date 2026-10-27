@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use MEV or MEV-Eval, please cite the accompanying paper."
+type: software
+title: "MEV: Dataset Resources and MEV-Eval"
+url: "https://mev-dataset.github.io/"
+repository-code: "https://github.com/SoftPointer/MEV"
+license: MIT
+authors:
+  - family-names: Zhu
+    given-names: Peiyuan
+  - family-names: Xie
+    given-names: Shaoan
+  - family-names: Shen
+    given-names: Yifan
+  - family-names: Tian
+    given-names: Wen
+  - family-names: Li
+    given-names: Zijian
+  - family-names: Chen
+    given-names: Guangyi
+  - family-names: Zhang
+    given-names: Kun
+preferred-citation:
+  type: generic
+  title: "MEV: A Multi-Event Video Dataset for Long-Take Generation"
+  year: 2026
+  url: "https://mev-dataset.github.io/"
+  authors:
+    - family-names: Zhu
+      given-names: Peiyuan
+    - family-names: Xie
+      given-names: Shaoan
+    - family-names: Shen
+      given-names: Yifan
+    - family-names: Tian
+      given-names: Wen
+    - family-names: Li
+      given-names: Zijian
+    - family-names: Chen
+      given-names: Guangyi
+    - family-names: Zhang
+      given-names: Kun

@@ -1,0 +1,164 @@
+{
+  "uuid": "ad18f033-3aa7-44eb-aaab-61cb19ccf790",
+  "seed": 100,
+  "event_count": 4,
+  "event_range": "e1-e4",
+  "prompt_variant_id": 5,
+  "prompt_variant_name": "structured_global_middle_plus_events",
+  "video_path": "videos/ad18f033-3aa7-44eb-aaab-61cb19ccf790/ad18f033-3aa7-44eb-aaab-61cb19ccf790_e1-e4_v05_structured_global_middle_plus_events_seed0100.mp4",
+  "record_id": "ad18f033-3aa7-44eb-aaab-61cb19ccf790_e1-e4_v5",
+  "normalized_duration_assignment": [
+    {
+      "event_id": 1,
+      "start_ratio": 0.0,
+      "end_ratio": 0.1238,
+      "duration_weight": 0.1238
+    },
+    {
+      "event_id": 2,
+      "start_ratio": 0.1238,
+      "end_ratio": 0.3226,
+      "duration_weight": 0.1988
+    },
+    {
+      "event_id": 3,
+      "start_ratio": 0.3226,
+      "end_ratio": 0.7845,
+      "duration_weight": 0.4619
+    },
+    {
+      "event_id": 4,
+      "start_ratio": 0.7845,
+      "end_ratio": 1.0,
+      "duration_weight": 0.2155
+    }
+  ],
+  "metrics": {
+    "eea": 0.5,
+    "eoa": 0.16666666666666666,
+    "tga": 0.5,
+    "btc": 0.4666666666666667,
+    "executed_events": 2,
+    "grounded_events": 2,
+    "correct_order_pairs": 1,
+    "num_order_pairs": 6,
+    "boundary_score_sum": 7.0,
+    "num_boundaries": 3
+  },
+  "gemini_response": {
+    "event_execution": [
+      {
+        "event_id": 1,
+        "executed": true,
+        "evidence": "The man is holding a receipt at the start of the video, and the woman takes it from him."
+      },
+      {
+        "event_id": 2,
+        "executed": true,
+        "evidence": "The woman holds the receipt and speaks to the man, gesturing with it before placing it down on the bed."
+      },
+      {
+        "event_id": 3,
+        "executed": false,
+        "evidence": "The man is already holding his phone from the beginning of the video; he does not pick it up. The woman guides him, but the action of picking up the phone is missing."
+      },
+      {
+        "event_id": 4,
+        "executed": false,
+        "evidence": "The man never puts down his phone, and the woman does not unfold a new paper receipt. The video ends while they are still discussing the first receipt."
+      }
+    ],
+    "event_order": {
+      "observed_event_order": [
+        1,
+        2
+      ],
+      "pairwise_order": [
+        {
+          "before_event_id": 1,
+          "after_event_id": 2,
+          "correct": true,
+          "evidence": "The man hands the receipt to the woman (event 1) before she holds it and speaks (event 2)."
+        },
+        {
+          "before_event_id": 1,
+          "after_event_id": 3,
+          "correct": false,
+          "evidence": "Event 3 is not executed."
+        },
+        {
+          "before_event_id": 1,
+          "after_event_id": 4,
+          "correct": false,
+          "evidence": "Event 4 is not executed."
+        },
+        {
+          "before_event_id": 2,
+          "after_event_id": 3,
+          "correct": false,
+          "evidence": "Event 3 is not executed."
+        },
+        {
+          "before_event_id": 2,
+          "after_event_id": 4,
+          "correct": false,
+          "evidence": "Event 4 is not executed."
+        },
+        {
+          "before_event_id": 3,
+          "after_event_id": 4,
+          "correct": false,
+          "evidence": "Neither event 3 nor event 4 is executed."
+        }
+      ]
+    },
+    "temporal_grounding": [
+      {
+        "event_id": 1,
+        "expected_start_ratio": 0.0,
+        "expected_end_ratio": 0.1238,
+        "grounded": true,
+        "evidence": "The video starts with the man holding the receipt and the woman taking it from him, which aligns with event 1."
+      },
+      {
+        "event_id": 2,
+        "expected_start_ratio": 0.1238,
+        "expected_end_ratio": 0.3226,
+        "grounded": true,
+        "evidence": "The woman holds the receipt and speaks to the man during this interval."
+      },
+      {
+        "event_id": 3,
+        "expected_start_ratio": 0.3226,
+        "expected_end_ratio": 0.7845,
+        "grounded": false,
+        "evidence": "The man does not pick up his phone; he is already holding it. The scene is a continuation of the previous event's discussion."
+      },
+      {
+        "event_id": 4,
+        "expected_start_ratio": 0.7845,
+        "expected_end_ratio": 1.0,
+        "grounded": false,
+        "evidence": "The man does not put down his phone, and no new receipt is unfolded. The video ends without this event occurring."
+      }
+    ],
+    "boundary_transition": [
+      {
+        "boundary_id": "1-2",
+        "score": 5,
+        "evidence": "The transition is seamless as the woman takes the receipt from the man and begins speaking, maintaining perfect character, object, and scene continuity."
+      },
+      {
+        "boundary_id": "2-3",
+        "score": 1,
+        "evidence": "The transition is broken because the key action of event 3 (man picking up his phone) does not happen; the video stagnates on the previous action."
+      },
+      {
+        "boundary_id": "3-4",
+        "score": 1,
+        "evidence": "The transition is broken as neither event 3 nor event 4 occurs as described; the video ends without any further distinct actions."
+      }
+    ],
+    "overall_notes": "The video successfully executes the first two events with excellent continuity but fails to generate the actions for the last two events, resulting in a static scene that does not progress as prompted."
+  }
+}
