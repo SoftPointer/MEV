@@ -32,7 +32,7 @@ The project page and Hugging Face repository were reachable. The inspected datas
 
 At inspection time, the project page had empty, disabled `Paper`, `Code`, and `Dataset` button links. For a separately requested website update, the intended destinations are `https://huggingface.co/datasets/MultiEventVideo/MEV` for `Dataset` and `https://github.com/SoftPointer/MEV` for `Code`; add `Paper` when its public URL is available. These changes belong to the separate project-page repository.
 
-The project page's existing BibTeX still says “submission,” while the local paper source is in camera-ready format. The new README and `CITATION.cff` use the verified title, author order, year, and project URL, without inventing an arXiv ID, DOI, or proceedings entry. Update the citations across both sites together when the final bibliographic record is available.
+The README and `CITATION.cff` now cite the arXiv record [2610.38241](https://arxiv.org/abs/2610.38241) (title, author order, and year verified against the arXiv listing). The project page's existing BibTeX still says “submission”; updating it belongs to the separate project-page repository.
 
 The Hub dataset card contains an older metadata-only distribution sentence, while its newer `LICENSE` describes the downloadable video package. This GitHub documentation follows the newer license and verified file inventory. Synchronizing the Hub card is a separate maintenance task.
 

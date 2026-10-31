@@ -87,11 +87,14 @@ If you use MEV or MEV-Eval, please cite:
 
 ```bibtex
 @misc{mev2026,
-  title  = {MEV: A Multi-Event Video Dataset for Long-Take Generation},
-  author = {Zhu, Peiyuan and Xie, Shaoan and Shen, Yifan and Tian, Wen and
-            Li, Zijian and Chen, Guangyi and Zhang, Kun},
-  year   = {2026},
-  url    = {https://mev-dataset.github.io/}
+  title         = {MEV: A Multi-Event Video Dataset for Long-Take Generation},
+  author        = {Zhu, Peiyuan and Xie, Shaoan and Shen, Yifan and Tian, Wen and
+                   Li, Zijian and Chen, Guangyi and Zhang, Kun},
+  year          = {2026},
+  eprint        = {2610.38241},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  url           = {https://arxiv.org/abs/2610.38241}
 }
 ```
 
